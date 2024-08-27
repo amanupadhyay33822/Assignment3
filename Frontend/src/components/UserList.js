@@ -9,7 +9,7 @@ const UserList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/users/')
+    axios.get('https://assignment3-1-hxrz.onrender.com/users/')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching the users:', error));
       setTimeout(() => {
